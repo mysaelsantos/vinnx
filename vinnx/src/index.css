@@ -89,6 +89,19 @@ ul {
     list-style: none;
 }
 
+/* Fallback - ensure all cards are visible even without JS animations */
+.service-card,
+.case-card,
+.pricing-card,
+.faq-item,
+.testimonial-card,
+.stat-card,
+.feature-item,
+.partner-item {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
 /* Custom Cursor */
 .cursor {
     width: 12px;
@@ -455,8 +468,8 @@ ul {
 
 .title-line {
     display: block;
-    opacity: 0;
-    transform: translateY(50px);
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .title-line.accent {
@@ -552,8 +565,8 @@ ul {
 }
 
 .about-text {
-    opacity: 0;
-    transform: translateX(-50px);
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .about-description {
